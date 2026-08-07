@@ -1,0 +1,61 @@
+﻿# Ransomware Simulator (Educational) 🛡️
+
+A safe, interactive cybersecurity training tool capable of simulating a real ransomware attack on a specific target folder. Built with Python and Streamlit.
+
+---
+
+## ⚠️ Safety Warning
+
+- **Educational Use Only**: Designed for training security analysts and employees.
+- **Safe Encryption**: Uses a hardcoded key so files are **always recoverable**.
+- **System Protection**: Intentionally blocks execution on `C:\Windows` and `C:\Program Files`.
+- **Do Not Upload**: Do not upload this code to public repositories without context, as it contains real encryption logic.
+
+---
+
+## ✨ Features
+
+- **Real Encryption**: Uses military-grade AES-256 (CFB Mode) via the `cryptography` library.
+- **Interactive Lab**: Select a "Bait" file and watch the infection unfold.
+- **Education Module**: Includes a post-incident quiz to test cyber-hygiene knowledge.
+- **Mobile Optimized**: Responsive UI works on phones and tablets.
+- **Attack Variants**: Simulate different speeds (Standard vs. Fast/WannaCry).
+
+---
+
+## 📦 Installation
+
+1. **Install Python**: Ensure Python 3.8+ is installed.
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 🚀 Usage
+
+### Method 1: Easy Launch (Windows)
+Double-click the `Start_Simulator.bat` file in this folder.
+
+### Method 2: Command Line
+Open a terminal in this folder and run:
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🔍 How It Works
+
+1. **Dashboard**: Learn about the threat.
+2. **Lab Setup**: Select a safe folder (e.g., create a folder named `Sandbox` on your Desktop and put some dummy text files in it).
+3. **Attack**: The simulator encrypts `.txt`, `.jpg`, `.docx` files in that folder.
+4. **Ransom Note**: Displays a fake demand screen.
+5. **Recovery**: Use the "Decrypt" button or the hidden "Learnt Lesson" tool to restore files immediately.
+
+---
+
+## 📄 License
+
+MIT License - Free for Educational Use.
